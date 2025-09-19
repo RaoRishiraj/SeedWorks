@@ -58,11 +58,10 @@ def process_seeds(image_array, area_threshold=200):
 
 # Upload image
 uploaded_file = st.file_uploader("Upload a seed image", type=["png","jpg","jpeg"])
-area_thresh = st.slider("Minimum seed area (px)", 50, 1000, 200)
 
 if uploaded_file is not None:
     image = Image.open(uploaded_file)
-    orig_img, detected_img, seed_count, seed_data = process_seeds(image, area_thresh)
+    orig_img, detected_img, seed_count, seed_data = process_seeds(image)
 
     st.subheader("Original Image")
     st.image(orig_img)
