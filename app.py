@@ -40,7 +40,7 @@ short_labels = {
 }
 # --- Streamlit setup ---
 st.set_page_config(layout="wide")
-st.title("Rice Grain Analysis Dashboard")
+st.title("Rice Grain Analysis")
 output_dir = "outputs"
 os.makedirs(output_dir, exist_ok=True)
 uploaded_file = st.file_uploader("Upload a rice grain image", type=["jpg", "png", "jpeg"])
