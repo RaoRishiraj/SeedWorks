@@ -148,7 +148,7 @@ if uploaded_file is not None:
     new_img.save(buf, format="PNG")
     buf.seek(0)
     st.download_button(
-        label="Download Annotated Image with Horizontal Legend",
+        label="Download Annotated Image",
         data=buf,
         file_name="rice_analysis_horizontal_legend.png",
         mime="image/png"
