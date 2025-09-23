@@ -76,7 +76,7 @@ if uploaded_file is not None:
         st.markdown("**Legend:**")
         for cls, color in aspect_colors.items():
             st.markdown(f"<span style='color:{color}; font-weight:bold;'>&#9608;</span> {cls}", unsafe_allow_html=True)
-        st.image(highres_path, width=True)
+        st.image(highres_path, use_column_width=True   )
     with col2:
         st.subheader("Counts & Percentages")
         total_grains = sum(aspect_counts.values())
